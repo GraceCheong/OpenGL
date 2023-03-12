@@ -13,7 +13,6 @@ Camera::Camera(int width, int height, glm::vec3 position)
     this->height = height;
     this->Position = position;
     
-    
 }
 
 void Camera::Matrix(float FOVdeg, float nearPlane, float farPlane, Shader& shader, const char* uniform)
