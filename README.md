@@ -1,5 +1,5 @@
 # OpenGL
-Practice code archive for OpenGL study
+Practice code archive for OpenGL Practice
 
 ### 2주차 Code
 
