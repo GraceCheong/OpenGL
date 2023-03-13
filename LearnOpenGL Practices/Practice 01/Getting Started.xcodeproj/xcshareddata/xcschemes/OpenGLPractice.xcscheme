@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C9A9093729B49C410068A7D6"
-               BuildableName = "OpenGLPractice"
-               BlueprintName = "OpenGLPractice"
-               ReferencedContainer = "container:OpenGLPractice.xcodeproj">
+               BuildableName = "Getting Started"
+               BlueprintName = "Getting Started"
+               ReferencedContainer = "container:Getting Started.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,7 +36,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/daeun/Desktop/Graphics/practice01/OpenGLPractice/OpenGLPractice"
+      customWorkingDirectory = "/Users/daeun/Desktop/Graphics/practice01/OpenGLPractice/LearnOpenGL Practices/Getting Started"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
@@ -47,9 +47,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C9A9093729B49C410068A7D6"
-            BuildableName = "OpenGLPractice"
-            BlueprintName = "OpenGLPractice"
-            ReferencedContainer = "container:OpenGLPractice.xcodeproj">
+            BuildableName = "Getting Started"
+            BlueprintName = "Getting Started"
+            ReferencedContainer = "container:Getting Started.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C9A9093729B49C410068A7D6"
-            BuildableName = "OpenGLPractice"
-            BlueprintName = "OpenGLPractice"
-            ReferencedContainer = "container:OpenGLPractice.xcodeproj">
+            BuildableName = "Getting Started"
+            BlueprintName = "Getting Started"
+            ReferencedContainer = "container:Getting Started.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

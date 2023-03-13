@@ -17,7 +17,6 @@
 		C9A9093C29B49C410068A7D6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9A9093B29B49C410068A7D6 /* main.cpp */; };
 		C9A9094429B4A2CD0068A7D6 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A9094329B4A2CC0068A7D6 /* OpenGL.framework */; };
 		C9A9094729B4A3230068A7D6 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A9094629B4A3230068A7D6 /* libglfw.3.3.dylib */; };
-		C9A9094829B4A3230068A7D6 /* libglfw.3.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = C9A9094629B4A3230068A7D6 /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		C9A9094C29B4AD780068A7D6 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = C9A9094B29B4AD780068A7D6 /* glad.c */; };
 /* End PBXBuildFile section */
 
@@ -30,17 +29,6 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
-		};
-		C9A9094929B4A3230068A7D6 /* Embed Libraries */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C9A9094829B4A3230068A7D6 /* libglfw.3.3.dylib in Embed Libraries */,
-			);
-			name = "Embed Libraries";
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -67,7 +55,7 @@
 		C9A8477C29BE185200583D21 /* glm */ = {isa = PBXFileReference; lastKnownFileType = folder; name = glm; path = ../../../../../../usr/local/Cellar/glm/0.9.9.8/include/glm; sourceTree = "<group>"; };
 		C9A8477D29BE28D900583D21 /* Camera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
 		C9A8477E29BE28D900583D21 /* Camera.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Camera.hpp; sourceTree = "<group>"; };
-		C9A9093829B49C410068A7D6 /* OpenGLPractice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGLPractice; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9A9093829B49C410068A7D6 /* Getting Started */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Getting Started"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A9093B29B49C410068A7D6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C9A9094329B4A2CC0068A7D6 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		C9A9094529B4A2EE0068A7D6 /* glfw */ = {isa = PBXFileReference; lastKnownFileType = folder; name = glfw; path = ../../../../../../usr/local/Cellar/glfw; sourceTree = "<group>"; };
@@ -144,7 +132,7 @@
 		C9A9092F29B49C410068A7D6 = {
 			isa = PBXGroup;
 			children = (
-				C9A9093A29B49C410068A7D6 /* OpenGLPractice */,
+				C9A9093A29B49C410068A7D6 /* Getting Started */,
 				C9A9093929B49C410068A7D6 /* Products */,
 				C9A9094229B4A2C40068A7D6 /* Frameworks */,
 			);
@@ -153,12 +141,12 @@
 		C9A9093929B49C410068A7D6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C9A9093829B49C410068A7D6 /* OpenGLPractice */,
+				C9A9093829B49C410068A7D6 /* Getting Started */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C9A9093A29B49C410068A7D6 /* OpenGLPractice */ = {
+		C9A9093A29B49C410068A7D6 /* Getting Started */ = {
 			isa = PBXGroup;
 			children = (
 				C9A8475629BDCB9500583D21 /* OpenGLPracticeDebug.entitlements */,
@@ -167,7 +155,7 @@
 				C9A8474629BDAE1600583D21 /* Resources */,
 				C9A8474429BDADFD00583D21 /* Sources */,
 			);
-			path = OpenGLPractice;
+			path = "Getting Started";
 			sourceTree = "<group>";
 		};
 		C9A9094229B4A2C40068A7D6 /* Frameworks */ = {
@@ -185,22 +173,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C9A9093729B49C410068A7D6 /* OpenGLPractice */ = {
+		C9A9093729B49C410068A7D6 /* Getting Started */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C9A9093F29B49C410068A7D6 /* Build configuration list for PBXNativeTarget "OpenGLPractice" */;
+			buildConfigurationList = C9A9093F29B49C410068A7D6 /* Build configuration list for PBXNativeTarget "Getting Started" */;
 			buildPhases = (
 				C9A9093429B49C410068A7D6 /* Sources */,
 				C9A9093529B49C410068A7D6 /* Frameworks */,
 				C9A9093629B49C410068A7D6 /* CopyFiles */,
-				C9A9094929B4A3230068A7D6 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = OpenGLPractice;
+			name = "Getting Started";
 			productName = OpenGLPractice;
-			productReference = C9A9093829B49C410068A7D6 /* OpenGLPractice */;
+			productReference = C9A9093829B49C410068A7D6 /* Getting Started */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -217,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C9A9093329B49C410068A7D6 /* Build configuration list for PBXProject "OpenGLPractice" */;
+			buildConfigurationList = C9A9093329B49C410068A7D6 /* Build configuration list for PBXProject "Getting Started" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -230,7 +217,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C9A9093729B49C410068A7D6 /* OpenGLPractice */,
+				C9A9093729B49C410068A7D6 /* Getting Started */,
 			);
 		};
 /* End PBXProject section */
@@ -367,7 +354,7 @@
 		C9A9094029B49C410068A7D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = OpenGLPractice/OpenGLPracticeDebug.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Getting Started/OpenGLPracticeDebug.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KH267NN4QM;
@@ -387,7 +374,7 @@
 		C9A9094129B49C410068A7D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = OpenGLPractice/OpenGLPractice.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Getting Started/OpenGLPractice.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KH267NN4QM;
 				ENABLE_HARDENED_RUNTIME = NO;
@@ -402,7 +389,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C9A9093329B49C410068A7D6 /* Build configuration list for PBXProject "OpenGLPractice" */ = {
+		C9A9093329B49C410068A7D6 /* Build configuration list for PBXProject "Getting Started" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C9A9093D29B49C410068A7D6 /* Debug */,
@@ -411,7 +398,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C9A9093F29B49C410068A7D6 /* Build configuration list for PBXNativeTarget "OpenGLPractice" */ = {
+		C9A9093F29B49C410068A7D6 /* Build configuration list for PBXNativeTarget "Getting Started" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C9A9094029B49C410068A7D6 /* Debug */,
