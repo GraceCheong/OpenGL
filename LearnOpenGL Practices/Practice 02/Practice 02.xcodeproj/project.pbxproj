@@ -35,6 +35,8 @@
 /* Begin PBXFileReference section */
 		C93F516C29CCC2490008A5FD /* light.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = light.vert; sourceTree = "<group>"; };
 		C93F516D29CCC25E0008A5FD /* light.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = light.frag; sourceTree = "<group>"; };
+		C98401DA29D0415100310311 /* planksSpec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = planksSpec.png; path = Textures/planksSpec.png; sourceTree = "<group>"; };
+		C98401DB29D0415100310311 /* planks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = planks.png; path = Textures/planks.png; sourceTree = "<group>"; };
 		C9A8474729BDAE9800583D21 /* default.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = default.vert; sourceTree = "<group>"; };
 		C9A8474829BDAED400583D21 /* default.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = default.frag; sourceTree = "<group>"; };
 		C9A8474929BDAF6F00583D21 /* ShaderClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShaderClass.hpp; sourceTree = "<group>"; };
@@ -127,6 +129,8 @@
 		C9A8477529BDFD4A00583D21 /* Textures */ = {
 			isa = PBXGroup;
 			children = (
+				C98401DB29D0415100310311 /* planks.png */,
+				C98401DA29D0415100310311 /* planksSpec.png */,
 				C9A8477729BDFD8300583D21 /* felix.jpeg */,
 				C9A8477629BDFD8300583D21 /* felix.png */,
 			);

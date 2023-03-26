@@ -6,6 +6,7 @@
 //
 
 #include "Texture.hpp"
+#include <iostream>
 
 Texture::Texture(const char * image, GLenum texType, GLenum slot, GLenum format, GLenum pixelType)
 {
@@ -15,12 +16,15 @@ Texture::Texture(const char * image, GLenum texType, GLenum slot, GLenum format,
     
     
     stbi_set_flip_vertically_on_load(true);
-    unsigned char * bytes = stbi_load("felix.jpeg", &widthImg, &heightImg, &numColch, 0);
-    
+    unsigned char * bytes = stbi_load(image, &widthImg, &heightImg, &numColch, 0);
+    if (!bytes)
+    {
+        std::cout << "failed to load the texture image." << std::endl;
+    }
     
     glGenTextures(1, &ID);
-    glActiveTexture(slot);
-    
+    glActiveTexture(GL_TEXTURE0 + slot);
+    unit = slot;
     glBindTexture(type, ID);
     
     
@@ -31,7 +35,7 @@ Texture::Texture(const char * image, GLenum texType, GLenum slot, GLenum format,
     glTexParameteri(type, GL_TEXTURE_WRAP_S, GL_REPEAT);
     glTexParameteri(type, GL_TEXTURE_WRAP_T, GL_REPEAT);
     
-    float flatcolor[] = {0.05f, 0.05f, 0.05f, 0.3f};
+    float flatcolor[] = {0.095f, 0.95f, 0.95f, 0.3f};
     glTexParameterfv(type, GL_TEXTURE_BORDER_COLOR, flatcolor);
  
     glTexImage2D(type, 0, GL_RGBA, widthImg, heightImg, 0, format, pixelType, bytes);
@@ -41,15 +45,16 @@ Texture::Texture(const char * image, GLenum texType, GLenum slot, GLenum format,
     glBindTexture(type, 0);
     
 }
-void Texture::TexUnit(Shader& shader, const char* uniform, GLuint unit)
+void Texture::texUnit(Shader& shader, const char* uniform, GLuint unit)
 {
     GLuint tex0Uni = glGetUniformLocation(shader.ID, uniform);
     shader.Activate();
-    glUniform1i(tex0Uni, 0);
+    glUniform1i(tex0Uni, unit);
 }
 
 void Texture::Bind()
 {
+    glActiveTexture(GL_TEXTURE0 + unit);
     glBindTexture(type, ID);
 }
 void Texture::UnBind()
